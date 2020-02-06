@@ -6,6 +6,7 @@ class Header extends React.Component{
 		return (
 			<div>
 				<Navigation/>
+				<h1>{this.props.title}</h1>
 			</div>
 		)
 	}

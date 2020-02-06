@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from './neighborhoods/Header.js';
+import {Helmet} from "react-helmet";
 
 class ContactPage extends React.Component {
   render() {
     return (
     	<div>
-    		<Header/>
-    		<h1>Contact</h1>
+    		<Helmet>
+    			<title>Contact</title>
+    		</Helmet>
+    		<Header title='Contact'/>
     	</div>	
     )
   }

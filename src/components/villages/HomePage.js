@@ -1,12 +1,16 @@
 import React from 'react';
 import Header from './neighborhoods/Header.js';
+import {Helmet} from "react-helmet";
+
 
 class HomePage extends React.Component {
   render() {
     return (
     	<div>
-    		<Header/>	
-      		<h1>Home</h1>
+    		<Helmet>
+    			<title>Home</title>
+    		</Helmet>
+    		<Header title='Home'/>	
       	</div>	
     )
   }
